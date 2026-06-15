@@ -8,7 +8,7 @@ interface Props {
 
 export default function StartScreen({ courseCategories, courses, onStart }: Props) {
   return (
-    <div className="min-h-screen bg-slate-900 px-4 py-12">
+    <div className="min-h-dvh bg-slate-900 px-4 py-12">
       <div className="max-w-2xl mx-auto space-y-10">
 
         <div className="text-center space-y-2">

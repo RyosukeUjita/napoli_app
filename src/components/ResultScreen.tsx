@@ -9,7 +9,7 @@ interface Props {
 
 export default function ResultScreen({ satisfaction, allClear, onRetry, onHome }: Props) {
   return (
-    <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
+    <div className="min-h-dvh bg-slate-900 flex items-center justify-center px-4">
       <div className="max-w-lg w-full space-y-8">
         <div className="text-center space-y-2">
           <p className="text-xs font-semibold tracking-widest text-blue-400 uppercase">

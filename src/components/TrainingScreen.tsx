@@ -12,7 +12,7 @@ interface Props {
 
 export default function TrainingScreen({ step, totalSteps, satisfaction, isWrong, onAnswer, onRead }: Props) {
   return (
-    <div className="min-h-screen bg-slate-900 flex flex-col">
+    <div className="h-dvh bg-slate-900 flex flex-col">
 
       <header className="bg-slate-800 border-b border-slate-700 px-6 py-4 flex-shrink-0">
         <div className="max-w-2xl mx-auto space-y-3">
