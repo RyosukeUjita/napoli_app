@@ -53,27 +53,29 @@ export default function TrainingScreen({ step, totalSteps, satisfaction, isWrong
         </div>
       </header>
 
-      <main className="flex-1 px-6 py-8 flex items-center justify-center overflow-y-auto">
-        <div className="max-w-2xl w-full">
-          <div className="bg-slate-800 border border-slate-700 rounded-lg p-6">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 w-10 h-10 rounded-full bg-slate-700 border border-slate-600 flex items-center justify-center text-slate-300 text-xs font-bold select-none">
-                客
-              </div>
-              <div className="flex-1 min-w-0">
-                <p className="text-xs text-slate-500 mb-2 font-medium">
-                  お客様 / マニュアル指示
-                </p>
-                <p className="text-slate-100 text-sm leading-relaxed whitespace-pre-line">
-                  {step.customerSpeech}
-                </p>
+      <div className="flex-1 overflow-y-auto">
+        <div className="min-h-full flex flex-col">
+        <main className="flex-1 px-6 py-8 flex items-center">
+          <div className="max-w-2xl w-full mx-auto">
+            <div className="bg-slate-800 border border-slate-700 rounded-lg p-6">
+              <div className="flex items-start gap-4">
+                <div className="flex-shrink-0 w-10 h-10 rounded-full bg-slate-700 border border-slate-600 flex items-center justify-center text-slate-300 text-xs font-bold select-none">
+                  客
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="text-xs text-slate-500 mb-2 font-medium">
+                    お客様 / マニュアル指示
+                  </p>
+                  <p className="text-slate-100 text-sm leading-relaxed whitespace-pre-line">
+                    {step.customerSpeech}
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </main>
+        </main>
 
-      <footer className="bg-slate-800 border-t border-slate-700 px-6 py-5 flex-shrink-0">
+        <footer className="bg-slate-800 border-t border-slate-700 px-6 py-5">
         <div className="max-w-2xl mx-auto space-y-3">
 
           {step.type === "quiz" ? (
@@ -120,7 +122,9 @@ export default function TrainingScreen({ step, totalSteps, satisfaction, isWrong
           )}
 
         </div>
-      </footer>
+        </footer>
+        </div>
+      </div>
     </div>
   );
 }
