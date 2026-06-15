@@ -22,7 +22,7 @@ export default function TrainingScreen({ step, totalSteps, satisfaction, isWrong
                 Pizza Academy
               </p>
               <p className="text-white font-semibold text-sm mt-0.5">
-                Step {step.id} / {totalSteps}：{step.stepName}
+                Step {step.id} / {totalSteps}
               </p>
             </div>
             <span
